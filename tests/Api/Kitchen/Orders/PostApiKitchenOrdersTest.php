@@ -11,7 +11,7 @@ use Tests\TestCase;
 
 class PostApiKitchenOrdersTest extends TestCase
 {
-    const URL = 'api/kitchen/orders';
+    const URL = 'kitchen/api/orders';
     /**
      * A basic test example.
      */

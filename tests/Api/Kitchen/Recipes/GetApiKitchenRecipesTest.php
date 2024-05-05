@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class GetApiKitchenRecipesTest extends TestCase
 {
-    const URL = 'api/kitchen/recipes';
+    const URL = 'kitchen/api/recipes';
     /**
      * A basic test example.
      */
