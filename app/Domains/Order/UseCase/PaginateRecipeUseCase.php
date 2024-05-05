@@ -2,7 +2,7 @@
 
 namespace App\Domains\Order\UseCase;
 use App\Data\Dtos\FindRecipePaginate;
-use Leugin\AlegraLaravel\Framework\Model\Recipe;
+use Leugin\KitchenCore\Models\Recipe\Recipe;
 
 class PaginateRecipeUseCase
 {
