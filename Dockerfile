@@ -18,6 +18,8 @@ RUN apt-get update && apt-get install -y \
     unzip \
     p7zip-full
 
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
 # Configura la extensión gd
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 
@@ -36,7 +38,8 @@ RUN apt-get update && apt-get install -y \
     npm
 RUN npm install npm@latest -g && \
     npm install n -g && \
-    n latest
+    n latest \
+
 # Establece el directorio de trabajo
 WORKDIR /var/www/html
 
