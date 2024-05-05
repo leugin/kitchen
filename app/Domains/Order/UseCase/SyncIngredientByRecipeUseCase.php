@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Domains\Order\UseCase;
-use Leugin\AlegraLaravel\Framework\Model\Order;
-use Leugin\AlegraLaravel\Framework\Model\Recipe;
+
+use Leugin\KitchenCore\Models\Order\Order;
+use Leugin\KitchenCore\Models\Recipe\Recipe;
 
 class SyncIngredientByRecipeUseCase
 {
