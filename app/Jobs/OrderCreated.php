@@ -52,6 +52,6 @@ class OrderCreated implements ShouldQueue
      */
     public function failed(Exception $exception): void
     {
-        logger(['emit Tracker Hire Segment Exception' => $exception]);
+        logger(['emit Exception' => $exception]);
     }
 }

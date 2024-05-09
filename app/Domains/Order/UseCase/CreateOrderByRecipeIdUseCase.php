@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Domains\Order\UseCase;
-use Leugin\AlegraLaravel\Framework\Model\Order;
+
+use Leugin\KitchenCore\Models\Order\Order;
 
 class CreateOrderByRecipeIdUseCase
 {
