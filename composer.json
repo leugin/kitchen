@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.8",
         "leugin/kitchen-core": "^0.0.1",
         "leugin/remote-auth": "dev-main",
+        "predis/predis": "^2.0",
         "vladimir-yuldashev/laravel-queue-rabbitmq": "^14.0"
     },
     "require-dev": {

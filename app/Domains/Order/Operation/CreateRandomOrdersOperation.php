@@ -22,9 +22,6 @@ class CreateRandomOrdersOperation
     {
         try {
             $recipes = Recipe::with('ingredients')->get();
-            info("orders", [
-                'q'=>$quantity
-            ]);
             for ($i = 0; $i < $quantity; $i++) {
                 /**
                  * @var Recipe $recipe
@@ -42,8 +39,7 @@ class CreateRandomOrdersOperation
                     $order,
                     $recipe,
                 );
-                info("order created", $order->toArray());
-                OrderCreated::dispatch($order);
+                OrderCreated::dispatch($order->toArray());
 
             }
             return response()->json(Response::success());
