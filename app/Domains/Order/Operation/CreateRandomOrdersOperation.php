@@ -39,7 +39,7 @@ class CreateRandomOrdersOperation
                     $order,
                     $recipe,
                 );
-                OrderCreated::dispatch($order->toArray());
+                OrderCreated::dispatch($order);
 
             }
             return response()->json(Response::success());
